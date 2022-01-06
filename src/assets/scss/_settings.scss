@@ -16,6 +16,12 @@
 // 1. Global
 // ---------
 
+$text-red: rgb(227,24,55);
+$text-white: rgba(255,255,255,.87);
+$link-blue: rgb(123,195,223);
+$bg-gray: rgb(23,23,23);
+
+
 $primary-color: #2199e8;
 $secondary-color: #777777;
 $success-color: #3adb76;
@@ -25,7 +31,7 @@ $light-gray: #f3f3f3;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #000000;
-$white: #fefefe;
+$white: #ffffff;
 $pre-color: #ff6908;
 $global-width: 600px;
 $global-width-small: 95%;
@@ -55,7 +61,7 @@ $block-grid-gutter: $global-gutter;
 // -------------
 
 $global-font-color: $black;
-$body-font-family: Helvetica, Arial, sans-serif;
+$body-font-family: Roboto, Helvetica, Arial, sans-serif;
 $global-font-weight: normal;
 $header-color: inherit;
 $global-line-height: 1.3;

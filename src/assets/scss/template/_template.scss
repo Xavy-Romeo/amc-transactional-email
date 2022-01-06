@@ -21,3 +21,197 @@ html,
     }
   }
 }
+
+.order-details {
+  .order-details-row {
+    border-bottom: 2px solid rgb(195,195,195);
+    .order-details-column {
+      & > table > tbody > tr > th {
+        padding: 25px 20px;
+        & > h5 {
+          font-weight: 700;
+          text-transform: capitalize;
+          font-size: 22px;
+          line-height: 1;
+          letter-spacing: 1.2px;
+        }
+      }
+      .matinee {
+        & .columns > table > tbody > tr > th {
+          padding: 20px 20px 0px 20px;
+        }
+        h4 {
+          font-size: 28px;
+          font-weight: 800;
+          letter-spacing: 1.5px;
+        }
+        h5 {
+          font-size: 22px;
+          font-weight: 700;
+          letter-spacing: 1.1px;
+          margin-bottom: 10px;
+        }
+        h6 {
+          font-weight: 700;
+          margin-top: 7px;
+          a {
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-decoration: underline;
+            color: $link-blue;
+          }
+        }
+      }
+      .qr-phone-row {
+        & .columns > table > tbody > tr > th {
+          padding: 0 20px;
+        }
+        .qr-phone {
+          width: 10%;
+          vertical-align: middle;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        h6 {
+          font-weight: 700;
+          margin-left: -25px !important;
+          hyphens: none;
+        }
+      }
+      .clean-row {
+        & .columns > table > tbody > tr > th {
+          padding: 0 20px;
+        }
+        h6 {
+          font-size: 20px;
+          font-weight: 700;
+          margin-bottom: 20px;
+        }
+        p {
+          font-size: 15px;
+          font-weight: 300;
+          margin-bottom: 20px;
+          hyphens: none;
+          span {
+            font-weight: 600;
+          }
+        }
+        a {
+          font-size: 18px;
+          font-weight: 700;
+          text-decoration: underline;
+          color: $link-blue;
+          letter-spacing: 1.1px;
+        }
+      }
+    } 
+  }
+}
+
+.purchase-details {
+  border-bottom: 2px solid rgb(195,195,195);
+  .purchase-main-column{
+    & > table > tbody > tr > th {
+      padding: 20px;
+      & > h5 {
+        font-weight: 700;
+        text-transform: capitalize;
+        font-size: 22px;
+        line-height: 1;
+        letter-spacing: 1.2px;
+      }
+    }
+    .purchase-details-row {
+      & > tbody > tr > th > table > tbody > tr > th {
+        padding: 20px 20px 0 20px;
+        & > h6 {
+          font-weight: 700;
+          margin-top: 4px;
+          a {
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-decoration: underline;
+            color: $text-red;
+          }
+        }
+      }
+      .movie-row {
+        margin-top: 13px;
+        .cover-column {
+          width: 31%;
+        }
+        .movie-info-column {
+          padding-left: 20px;
+          .movie-title {
+            border-bottom: 2px solid rgb(195,195,195);
+            & > tbody > tr > th {
+              padding-bottom: 15px;
+            }
+            h5 {
+              font-size: 20px;
+              font-weight: 700;
+              margin-bottom: 10px;
+              display: block;
+              img {
+                height: 12px;
+                display: inline-block;
+                vertical-align: middle;
+              }
+            }
+            p {
+              font-size: 18px;
+              line-height: 1.5;
+              font-weight: 300;
+            }
+          }
+          .qr-row {
+            & > tbody > tr > th {
+              padding-top: 20px;
+            }
+            .qr-code {
+              width: 25%;
+              img {
+                border: 1px solid $black;
+                border-radius: 50%;
+              }
+            }
+            .auditorium-column {
+              & > table > tbody > tr > th {
+                padding-left: 20px;
+              }
+              p {
+                font-size: 16px;
+                margin-bottom: 10px;
+                line-height: 1;
+                span {
+                  font-weight: 600;
+                }
+              }
+              .ticket-total {
+                color: $text-red;
+              }
+            }
+          }
+        }
+      }
+      .pre-order-row {
+        .pre-order-spacer-column {
+          width: 31%;
+        }
+        .pre-order-column {
+          padding: 15px 0 10px 20px;
+          a {
+            border: 1px solid $black;
+            color: $black;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 18px;
+            font-weight: 600;
+          }
+        }
+      } 
+    }
+  }
+}
