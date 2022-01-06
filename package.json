@@ -1,5 +1,6 @@
 {
-  "name": "foundation-emails-template",
+  "name": "amc-transactional-email",
+  "homepage": "https://xavy-romeo.github.io/amc-transactional-email/",
   "version": "1.0.0",
   "description": "Basic template for a Foundation for Emails project.",
   "repository": "zurb/foundation-emails-template",
@@ -9,12 +10,14 @@
     "build": "gulp --production",
     "zip": "gulp zip --production",
     "litmus": "gulp litmus --production",
-    "mail": "gulp mail --production"
+    "mail": "gulp mail --production",
+    "deploy": "gh-pages -d dist"
   },
   "author": "ZURB <foundation@zurb.com>",
   "license": "MIT",
   "dependencies": {
-    "foundation-emails": "^2.2.1"
+    "foundation-emails": "^2.2.1",
+    "gh-pages": "^3.2.3"
   },
   "devDependencies": {
     "babel-core": "^6.3.26",
