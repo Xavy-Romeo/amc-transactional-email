@@ -24,7 +24,7 @@ html,
 
 .order-details {
   .order-details-row {
-    border-bottom: 2px solid rgb(195,195,195);
+    border-bottom: 2px solid $color-border;
     .order-details-column {
       & > table > tbody > tr > th {
         padding: 25px 20px;
@@ -111,7 +111,7 @@ html,
 }
 
 .purchase-details {
-  border-bottom: 2px solid rgb(195,195,195);
+  border-bottom: 2px solid $color-border;
   .purchase-main-column{
     & > table > tbody > tr > th {
       padding: 25px 20px;
@@ -145,7 +145,7 @@ html,
         .movie-info-column {
           padding-left: 20px;
           .movie-title {
-            border-bottom: 2px solid rgb(195,195,195);
+            border-bottom: 2px solid $color-border;
             & > tbody > tr > th {
               padding-bottom: 15px;
             }
@@ -218,7 +218,7 @@ html,
 }
 
 .summary-section {
-  border-bottom: 2px solid rgb(195,195,195);
+  border-bottom: 2px solid $color-border;
   .summary-main-column {
     & > table > tbody > tr > th {
       padding: 25px 20px;
@@ -259,7 +259,7 @@ html,
 }
 
 .theatre-info-section {
-  border-bottom: 2px solid rgb(195,195,195);
+  border-bottom: 2px solid $color-border;
   .theatre-info-main-column {
     & > table > tbody > tr > th {
       padding: 25px 20px;
@@ -306,7 +306,7 @@ html,
 }
 
 .change-plans-section {
-  border-bottom: 2px solid rgb(195,195,195);
+  border-bottom: 2px solid $color-border;
   .change-plans-main-column {
     & > table > tbody > tr > th {
       padding: 25px 20px;
@@ -324,6 +324,95 @@ html,
       color: $link-blue;
       font-weight: 600;
       text-decoration: underline;
+    }
+  }
+}
+
+.footer {
+  background: $black !important;
+  background-color: $black !important;
+  .footer-main-column {
+    .footer-top {
+      height: 201px !important;
+      .footer-logo-row {
+        height: 120px !important;
+        border-bottom: 1px solid $color-border-footer;
+        .footer-logo {
+          vertical-align: middle;
+          & > table {
+            width: 180px !important;
+            margin: 0 auto !important;
+          }
+          img { 
+            width: 100% !important;
+          }
+        }
+      }
+      .social-icons-row {
+        height: 80px !important;
+        .social-icons {
+          vertical-align: middle;
+          & > table > tbody > tr > th {
+            text-align: center;
+            padding: 0;
+            margin: 0;
+          }
+          a {
+            display: inline-block;
+            img {
+              height: 35px;
+              margin: 0 12px;
+            }
+          }
+        }
+      }
+    }
+    .footer-mid {
+      background: $bg-gray !important;
+      background-color: $bg-gray !important;
+      .footer-mid-column {
+        .no-refund-row {
+          border-bottom: 2px solid $color-border-footer;
+          height: 90px !important;
+          & > tbody > tr > th {
+            vertical-align: middle;
+          }
+          p {
+            text-align: center;
+            color: $text-white;
+            font-size: 12px;
+            line-height: 2;
+          }
+        }
+        .contact-row {
+          height: 80px !important;
+          & > tbody > tr > th {
+            vertical-align: middle;
+          }
+          .contact-links {
+            & > table > tbody > tr > th {
+              text-align: center;
+              color: $text-white;
+            }
+            a {
+              font-size: 14px;
+              margin: 0 20px;
+              color: $text-white;
+            }
+          }
+        }
+      }
+    }
+    .footer-bottom {
+      background: $black;
+      background-color: $black;
+      .copy {
+        p {
+          text-align: center;
+          margin-top: 20px;
+          color: $text-white;
+        }
+      }
     }
   }
 }
