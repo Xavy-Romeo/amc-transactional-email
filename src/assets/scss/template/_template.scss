@@ -407,6 +407,9 @@ html,
       background: $black;
       background-color: $black;
       .copy {
+        span {
+          margin-right: 5px;
+        }
         p {
           text-align: center;
           margin-top: 20px;
