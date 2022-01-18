@@ -520,6 +520,8 @@ html,
   .footer .footer-main-column .footer-bottom {
     background: #000000;
     background-color: #000000; }
+    .footer .footer-main-column .footer-bottom .copy span {
+      margin-right: 5px; }
     .footer .footer-main-column .footer-bottom .copy p {
       text-align: center;
       margin-top: 20px;
